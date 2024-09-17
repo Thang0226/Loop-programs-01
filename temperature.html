@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Enter temperature</title>
+  </head>
+
+  <body>
+    <script>
+      let temp;
+      temp = +prompt("Nhap vao nhiet do hien tai:");
+      while (temp < 20 || temp > 100) {
+        if (temp < 20) {
+          temp = +prompt("Nhap vao nhiet do cao hon:");
+        } else if (temp > 100) {
+          temp = +prompt("Nhap vao nhiet do thap hon:");
+        }
+      }
+      alert("Dat nhiet do tieu chuan.");
+    </script>
+  </body>
+</html>
